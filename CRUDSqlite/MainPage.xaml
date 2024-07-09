@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUDSqlite.MainPage">
+
+    <StackLayout>
+        <Label Text="Registro de alumnos" HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="txtIdAlumno" IsVisible="False" />
+        <Entry x:Name="txtNombre" Placeholder="Nombre" />
+        <Entry x:Name="txtApellidoPaterno" Placeholder="Apellido paterno" />
+        <Entry x:Name="txtApellidoMaterno" Placeholder="Apellido materno" />
+        <Entry x:Name="txtEdad" Placeholder="Edad" />
+        <Entry x:Name="txtEmail" Placeholder="Email" />
+        <Label Text="Selecciona una imagen" />
+        <Button x:Name="BtnSeleccionarImagen" Text="Seleccionar Imagen" Clicked="BtnSeleccionarImagen_Clicked"/>
+        <Image x:Name="imgControl" Source="" IsVisible="True"/>
+
+        <Entry x:Name="txtNombreBuscar" Placeholder="Introduce el nombre a buscar" />
+
+
+        <Button x:Name="BtnRegistrar" Text="Registrar alumno" Clicked="BtnRegistrar_Clicked" />
+        <Button x:Name="BtnActualizar" Text="Actualizar" Clicked="BtnActualizar_Clicked" IsVisible="False" />
+        <Button x:Name="BtnEliminar" Text="Eliminar" Clicked="BtnEliminar_Clicked" IsVisible="False" />
+
+        <Button x:Name="verRegistro" Text="Buscar" Clicked="verRegistro_Clicked" IsVisible="True" />
+
+
+
+
+
+    </StackLayout>
+
+</ContentPage>

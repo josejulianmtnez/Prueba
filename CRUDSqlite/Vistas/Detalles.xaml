@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUDSqlite.Vistas.Detalles">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="nombre" Text="{Binding NombreUsuario}" />
+            <Label x:Name="apaterno" Text="{Binding ApaternoUsuario}" />
+            <Label x:Name="amaterno" Text="{Binding AmaternoUsuario}" />
+            <Image x:Name="imgControl" Source="{Binding ImgUsuario}" Aspect="AspectFit" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
